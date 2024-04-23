@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-25</title>
+    <style>
+        .rb{
+            background-image: linear-gradient(to right, violet, indigo, blue, green,yellow, orange ,red);
+            width: 700px ;
+            height: 200px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 400px;
+        }
+        .rg{
+          
+            width: 900px ;
+            height: 500px;
+            margin: 10px 300px;
+            animation-name: waves;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes waves {
+            0%{
+                background-image:radial-gradient(brown 4% , rgb(0, 221, 255) 20%, rgb(53, 53, 213) 50%,skyblue 75%, rgb(86, 86, 255) 90%,navy 100%);
+            }
+            50%{
+                background-image:radial-gradient(brown 5% , rgb(0, 221, 255) 30%, rgb(53, 53, 213) 55%,skyblue 75%, rgb(86, 86, 255) 90%,navy 100%);
+            }
+            75%{
+                background-image:radial-gradient(brown 7% , rgb(0, 221, 255) 40%, rgb(53, 53, 213) 50%,skyblue 85%, rgb(86, 86, 255) 99%,navy 100%);
+            }
+            100%{
+                background-image:radial-gradient(brown 10% , rgb(0, 221, 255) 50%, rgb(53, 53, 213) 60%,skyblue 75%, rgb(86, 86, 255) 100%,navy 100%);
+            }
+        }
+
+
+
+        .cr{
+           border: 1px solid black;
+            border-radius: 50%;
+            height: 500px;
+            width: 500px;
+            margin: 10px 450px;
+            position: relative;
+            background-image: conic-gradient(brown 0deg,brown 140deg,skyblue 140deg,skyblue 240deg, orange 240deg, orange 340deg, green 340deg, green 360deg );
+        }
+        .ex{
+            position: absolute;
+            left: 700px;
+            top: 10px;
+        }
+        #s1{
+            display: inline-block;
+            background-color: brown;
+            border: 1px solid brown;
+            width: 20px;
+            height: 20px;
+        }
+        #s2{
+            display: inline-block;
+            background-color:skyblue;
+            border: 1px solid skyblue;
+            width: 20px;
+            height: 20px;
+        }
+        #s3{
+            display: inline-block;
+            background-color: green;
+            border: 1px solid green;
+            width: 20px;
+            height: 20px;
+        }
+        #s4{
+            display: inline-block;
+            background-color: orange;
+            border: 1px solid orange;
+            width: 20px;
+            height: 20px;
+        }
+      
+
+        .rama{
+            margin: 100px 700px ;
+            -webkit-box-reflect: left 20px;
+           height: 150px;;
+        }
+
+    </style>
+</head>
+<body>
+   <center> <h1> by LINEAR GRADIENT </h1></center>
+    <div class="rb"><h1>RAINBOW</h1></div>
+
+
+    <br><br><br>
+<center> <h1> by RADIAL GRADIENT </h1></center>
+    <div class="rg">
+
+    </div>
+
+    <br> <br>
+
+
+
+    <center> <h1> by CONIC GRADIENT </h1></center>
+    <div class="cr">
+<div class="same">
+<pre style="font-size: xx-large; color: rgb(12, 5, 5);">
+          
+              5%                              
+                       
+             
+                       
+              
+    25%                    45%
+                       
+                          
+                
+                   
+                          
+                 25%         
+</pre>
+</div>
+        <div class="ex">
+            <h3><span id="s1"></span> Soil</h3>
+            <h3><span id="s2"></span>  water</h3>
+            <h3><span id="s3"></span>organic</h3>
+            <h3><span id="s4"></span>air</h3>
+        </div>
+
+    </div>
+    <br>
+
+    <center><h1>BOX-REFLECT TASK</h1></center>
+
+    <div class="rama">
+        <img src="rama.png" alt="">
+    </div>
+</body>
+</html>
